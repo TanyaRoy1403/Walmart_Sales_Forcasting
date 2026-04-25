@@ -30,17 +30,18 @@ The datasets were merged and processed to create a unified dataset for analysis 
 
 ## Visualizations
 
+
 ### Year-wise Sales Trend
-![Year-wise Sales Trend](images/Years_Wise.png)
+![Year-wise Sales Trend](Walmart%20Sales%20Forecasting/images/Years_Wise.png)
 
 ### Store-wise Sales
-![Store-wise Sales](images/Store_Wise.png)
+![Store-wise Sales](Walmart%20Sales%20Forecasting/images/Store_Wise.png)
 
 ### Department-wise Sales
-![Department-wise Sales](images/Dept_Wise.png)
+![Department-wise Sales](Walmart%20Sales%20Forecasting/images/Dept_Wise.png)
 
 ### Correlation Heatmap
-![Correlation Heatmap](images/Correlation.png)
+![Correlation Heatmap](Walmart%20Sales%20Forecasting/images/Correlation.png)
 
 ---
 
