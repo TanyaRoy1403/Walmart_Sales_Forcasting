@@ -1,84 +1,65 @@
 # Walmart Sales Forecasting
 
 ## Overview
-This project focuses on analyzing and forecasting Walmart weekly sales using data analysis and machine learning techniques. The objective is to understand sales patterns, identify key influencing factors, and build predictive models for accurate forecasting.
-
----
-
-## Objectives
-- Analyze historical sales data to identify trends and seasonality  
-- Perform feature engineering to capture time-based patterns  
-- Build and evaluate machine learning models for sales prediction  
-- Derive insights to support business decision-making  
+This project analyzes Walmart weekly sales data and builds machine learning models to forecast sales. The goal is to identify sales patterns, understand the effect of stores/departments/holidays, and predict weekly sales using regression models.
 
 ---
 
 ## Dataset
+The project uses multiple Walmart sales data files:
 
-The project uses the Walmart Store Sales dataset, which consists of multiple files:
+- `train.csv` – historical weekly sales data
+- `test.csv` – test data for prediction
+- `features.csv` – external factors such as temperature, fuel price, CPI, unemployment, and holiday information
+- `stores.csv` – store metadata such as store type and size
 
-- **train.csv** – Historical weekly sales data (target variable: Weekly_Sales)  
-- **test.csv** – Test dataset for prediction  
-- **features.csv** – External features such as temperature, fuel price, CPI, unemployment, and holiday indicators  
-- **stores.csv** – Store-level metadata including store type and size  
-
-### Key Features Used
-- Store  
-- Department (Dept)  
-- Weekly_Sales  
-- IsHoliday  
-- Temperature, Fuel Price, CPI, Unemployment  
-- Store Type and Size  
-
-### Data Preparation
-- Merged train, features, and store datasets using Store and Date  
-- Converted Date column to datetime format  
-- Extracted time-based features such as Week and Year  
-- Cleaned and structured data for modeling  
+The datasets were merged and processed to create a unified dataset for analysis and modeling.
 
 ---
 
-## Approach
-
-### 1. Exploratory Data Analysis
-- Analyzed sales trends across different years  
-- Compared performance across stores and departments  
-- Identified seasonal patterns and holiday-driven demand spikes  
-- Used visualizations such as line plots, bar charts, and heatmaps  
-
-### 2. Feature Engineering
-- Created time-based features (Week, Year)  
-- Selected relevant variables for model training  
-
-### 3. Model Building
-- Implemented Ridge Regression with hyperparameter tuning using GridSearchCV  
-- Built Random Forest Regressor for improved performance  
-
-### 4. Model Evaluation
-- Evaluated models using:
-  - Root Mean Squared Error (RMSE)  
-  - R-squared (R2)  
-
-- Random Forest achieved strong performance with:
-  - R2 ~ 0.97 on test data  
+## Key Steps
+- Data cleaning and preprocessing
+- Feature engineering using date-based features such as Week and Year
+- Exploratory Data Analysis on sales trends, stores, and departments
+- Correlation analysis between numerical features
+- Model building using Ridge Regression and Random Forest Regressor
+- Hyperparameter tuning using GridSearchCV
+- Model evaluation using RMSE and R2 score
 
 ---
 
-## Results
-- Identified clear seasonal sales patterns across weeks and years  
-- Observed variation in performance across stores and departments  
-- Random Forest model provided high accuracy for sales forecasting  
+## Visualizations
+
+### Year-wise Sales Trend
+![Year-wise Sales Trend](Images/Years_Wise.png)
+
+### Store-wise Sales
+![Store-wise Sales](Images/Store_Wise.png)
+
+### Department-wise Sales
+![Department-wise Sales](Images/Dept_Wise.png)
+
+### Correlation Heatmap
+![Correlation Heatmap](Images/Correlation.png)
+
+---
+
+## Model Performance
+The Random Forest Regressor performed better than the linear model and achieved strong predictive performance.
+
+- Test R2 Score: approximately 0.97
+- Evaluation Metrics Used: RMSE and R2 Score
 
 ---
 
 ## Technologies Used
-- Python  
-- Pandas, NumPy  
-- Matplotlib, Seaborn  
-- Scikit-learn  
-
----
-
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Jupyter Notebook
 
 ---
 
