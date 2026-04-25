@@ -79,4 +79,15 @@ The project uses the Walmart Store Sales dataset, which consists of multiple fil
 
 ---
 
-## Project Structure
+
+---
+
+## Conclusion
+This project demonstrates how data analysis and machine learning techniques can be applied to understand sales behavior and build predictive models. The insights generated can help in better inventory planning and decision-making.
+
+---
+
+## Future Improvements
+- Apply advanced models such as XGBoost or time-series forecasting techniques  
+- Incorporate additional external factors for better accuracy  
+- Deploy the model as an API or dashboard  
